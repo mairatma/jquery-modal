@@ -1,0 +1,14 @@
+{
+  "name": "jquery-modal",
+  "version": "0.0.1",
+  "description": "jQuery Modal Widget",
+  "keywords": [
+    "jquery",
+    "metaljs",
+    "modal"
+  ],
+  "repository": "mairatma/jquery-modal",
+  "dependencies": {
+    "metaljs": "liferay/metal#master"
+  }
+}
