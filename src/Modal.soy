@@ -1,0 +1,71 @@
+{namespace Templates.Modal}
+
+/**
+ *
+ */
+{template .content}
+	<div class="modal-dialog">
+		<div class="modal-content">
+			{delcall Modal.header data="all" /}
+			{delcall Modal.body data="all" /}
+			{delcall Modal.footer data="all" /}
+		</div>
+	</div>
+{/template}
+
+/**
+ * @param bodyContent
+ */
+{template .body}
+    <p>{$bodyContent}</p>
+{/template}
+
+/**
+ * @param? elementContent
+ * @param id
+ * @param? surfaceId
+ */
+{deltemplate Modal.body variant="'element'"}
+    <div id="{$id}-body" class="modal-body">
+        {$elementContent}
+    </div>
+{/deltemplate}
+
+/**
+ * @param headerContent
+ */
+{template .header}
+    <h4 class="modal-title">{$headerContent}</h4>
+{/template}
+
+/**
+ * @param? elementContent
+ * @param id
+ * @param? surfaceId
+ */
+{deltemplate Modal.header variant="'element'"}
+    <div id="{$id}-header" class="modal-header">
+        {$elementContent}
+    </div>
+{/deltemplate}
+
+/**
+ * @param footerButtons
+ */
+{template .footer}
+  {foreach $button in $footerButtons}
+  	<button type="button" class="btn {$button.css}">{$button.label}</button>
+  {/foreach}
+{/template}
+
+/**
+ * @param? elementContent
+ * @param id
+ * @param? surfaceId
+ */
+{deltemplate Modal.footer variant="'element'"}
+    <div id="{$id}-footer" class="modal-footer">
+        {$elementContent}
+    </div>
+{/deltemplate}
+

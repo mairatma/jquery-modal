@@ -3,11 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>jQuery Modal Plugin</title>
+	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+
+	<script src="../bower_components/jquery/dist/jquery.js"></script>
+	<script src="../bower_components/jquery-ui/jquery-ui.js"></script>
+	<script src="../bower_components/soyutils/soyutils.js"></script>
 	<script src="../build/modal.js"></script>
 </head>
 <body>
+	<div id="Modal1" class="modal-container"></div>
+	<div id="Modal2" class="modal-container"></div>
 	<script>
-		new metal.Modal().render();
+		new metal.Modal({
+			headerContent: 'My Header',
+			bodyContent: 'My Body',
+			footerButtons: [
+				{css: 'btn-default', label: 'Cancel'},
+				{css: 'btn-primary', label: 'Save'}
+			],
+			visible: true
+		}).render('#Modal1');
 	</script>
 </body>
 </html>

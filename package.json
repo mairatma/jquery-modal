@@ -10,5 +10,9 @@
   "repository": "mairatma/jquery-modal",
   "dependencies": {
     "metaljs": "liferay/metal#master"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "run-sequence": "^1.1.0"
   }
 }

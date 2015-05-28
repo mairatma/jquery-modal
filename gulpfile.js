@@ -1,6 +1,4 @@
 var gulp = require('gulp');
-var rename = require('gulp-rename');
-var uglify = require('gulp-uglify');
 var runSequence = require('run-sequence');
 
 require('metaljs')({
@@ -9,4 +7,8 @@ require('metaljs')({
 
 gulp.task('build', function(cb) {
   runSequence('build:globals', cb);
+});
+
+gulp.task('watch', function(cb) {
+  runSequence('watch:globals', cb);
 });
