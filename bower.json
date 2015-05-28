@@ -2,7 +2,7 @@
   "name": "jquery-modal",
   "version": "0.0.1",
   "main": "src/modal-jquery.js",
-  "description": "jQuery Modal Widget",
+  "description": "A simple jQuery Plugin built on top of a Metal.js modal component.",
   "keywords": [
     "jquery",
     "metaljs",
