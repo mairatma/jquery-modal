@@ -14,15 +14,12 @@
 	<div id="Modal1" class="modal-container"></div>
 	<div id="Modal2" class="modal-container"></div>
 	<script>
-		new metal.Modal({
+		$('.modal-container').modal({
 			headerContent: 'My Header',
 			bodyContent: 'My Body',
-			footerButtons: [
-				{css: 'btn-default', label: 'Cancel'},
-				{css: 'btn-primary', label: 'Save'}
-			],
+			footerButtons: [{label: 'OK', css: 'btn-primary'}],
 			visible: true
-		}).render('#Modal1');
+		});
 	</script>
 </body>
 </html>
