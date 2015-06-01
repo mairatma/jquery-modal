@@ -9,6 +9,18 @@ class Modal extends SoyComponent {
 		super(opt_config);
 	}
 
+	handleClick(event) {
+		this.emit('buttonClicked', {button: event.delegateTarget});
+	}
+
+	hide() {
+		this.visible = false;
+	}
+
+	show() {
+		this.visible = true;
+	}
+
 	syncVisible() {
 		this.element.style.display = this.visible ? 'block' : 'none';
 	}

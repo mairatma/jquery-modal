@@ -54,7 +54,7 @@
  */
 {template .footer}
   {foreach $button in $footerButtons}
-  	<button type="button" class="btn {$button.css}">{$button.label}</button>
+  	<button type="button" class="btn {$button.css}" data-onclick="handleClick">{$button.label}</button>
   {/foreach}
 {/template}
 

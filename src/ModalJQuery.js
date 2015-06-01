@@ -1,6 +1,6 @@
 'use strict'
 
-import JQueryPlugin from './JQueryPlugin';
+import JQueryPlugin from 'bower:metal-jquery-plugin/src/JQueryPlugin';
 import Modal from './Modal';
 
 JQueryPlugin.register('modal', Modal);

@@ -12,6 +12,7 @@
     "metaljs": "liferay/metal#master",
     "jquery-ui": "~1.11.4",
     "bootstrap": "~3.3.4",
-    "soyutils": "~2012.12.21"
+    "soyutils": "~2012.12.21",
+    "metal-jquery-plugin": "mairatma/metal-jquery-plugin#master"
   }
 }

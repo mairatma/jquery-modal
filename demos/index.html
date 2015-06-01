@@ -20,6 +20,9 @@
 			footerButtons: [{label: 'OK', css: 'btn-primary'}],
 			visible: true
 		});
+		$('.modal-container').on('metal-modal:buttonClicked', function(event) {
+			$(this).modal('hide');
+		});
 	</script>
 </body>
 </html>

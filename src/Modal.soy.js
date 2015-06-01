@@ -109,7 +109,7 @@ Templates.Modal.footer = function(opt_data, opt_ignored, opt_ijData) {
   var buttonListLen29 = buttonList29.length;
   for (var buttonIndex29 = 0; buttonIndex29 < buttonListLen29; buttonIndex29++) {
     var buttonData29 = buttonList29[buttonIndex29];
-    output += '<button type="button" class="btn ' + soy.$$escapeHtmlAttribute(buttonData29.css) + '">' + soy.$$escapeHtml(buttonData29.label) + '</button>';
+    output += '<button type="button" class="btn ' + soy.$$escapeHtmlAttribute(buttonData29.css) + '" data-onclick="handleClick">' + soy.$$escapeHtml(buttonData29.label) + '</button>';
   }
   return soydata.VERY_UNSAFE.ordainSanitizedHtml(output);
 };
